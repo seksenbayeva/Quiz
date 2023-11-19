@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400; 500; 700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('Clip path group.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 40%;
+    max-width: 400px;
+    padding: 20px;
+    margin-top: 80px;
+    background-color: white;
+    box-shadow: 15px 20px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; 
+    margin-bottom: 20px; 
+}
+
+.question {
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6F5C56;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 2vw;
+    border-radius: 4px;
+    transition: background-color 0.3s;  
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #9C3723;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hide {
+    display: block;
+}
+
+.question-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 764px) {
+    .container {
+        width: 80%; /* Измените это значение по вашему усмотрению */
+        margin-top: 200px; /* Измените это значение по вашему усмотрению */
+    }
+
+    .button {
+        font-size: 3vw;
+}
+
+}
